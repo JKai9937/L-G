@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L&G</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     /* Basic styling */
     body {
@@ -15,15 +16,16 @@
 
     /* Sidebar styling */
     .sidebar {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #1c1c1c;
-      padding-top: 60px;
-      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
-    }
+  height: 100%;
+  min-height: 1vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1c1c1c;
+  padding-top: 60px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); 
+}
 
     .sidebar a {
       padding: 15px 20px;
@@ -38,6 +40,16 @@
       background-color: #333;
     }
 
+    /* Position the settings link at the bottom */
+    .sidebar .settings {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #f1f1f1;
+}
     /* Content styling */
     .content {
       margin-left: 250px;
@@ -77,7 +89,11 @@
   <a href="#">排行榜</a>
   <a href="#">积分商店</a>
   <a href="#">客服</a>
-  <a href="#">设置</a>
+  <!-- Settings link with logo at the bottom -->
+  <a href="#" class="settings">
+    <img src="https://st4.depositphotos.com/18657574/21841/v/450/depositphotos_218416966-stock-illustration-settings-icon-trendy-design-style.jpg" alt="Settings Logo" width="20px" height="20px" style="margin-right: 10px;">
+    <p>设置</p>
+  </a>
 </div>
 
 <!-- Main content -->

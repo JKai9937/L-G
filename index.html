@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L&G</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f5;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #1c1c1c;
+      padding-top: 60px;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #f1f1f1;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #333;
+    }
+
+    /* Content styling */
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+      transition: margin-left 0.3s;
+    }
+
+    /* Responsive design: Reduce sidebar size on smaller screens */
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        width: 200px;
+      }
+      .content {
+        margin-left: 200px;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .sidebar {
+        width: 100px;
+      }
+      .sidebar a {
+        font-size: 14px;
+        padding: 10px;
+      }
+      .content {
+        margin-left: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <a href="#">主页</a>
+  <a href="#">排行榜</a>
+  <a href="#">积分商店</a>
+  <a href="#">客服</a>
+  <a href="#">设置</a>
+</div>
+
+<!-- Main content -->
+<div class="content">
+  <h1>Ladies and Gentlemen</h1>
+  <p>欢迎来到。。。。</p>
+</div>
+
+</body>
+</html>
+
